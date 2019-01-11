@@ -4,35 +4,35 @@
 0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js' }
 1 notice cli v3.10.5
 2 verbose rootPath C:\projects\lerna_test
-3 verbose session 61809a6051ff197e
+3 verbose session 841a3021381afa08
 4 verbose user-agent lerna/3.10.5/node@v9.11.2+x64 (win32)
-5 verbose git-describe undefined => "v0.0.6-1-g44a4824"
-6 silly git-describe parsed => {"lastTagName":"v0.0.6","lastVersion":"v0.0.6","refCount":"1","sha":"44a4824","isDirty":false}
+5 verbose git-describe undefined => "v0.0.7-1-g426b434"
+6 silly git-describe parsed => {"lastTagName":"v0.0.7","lastVersion":"v0.0.7","refCount":"1","sha":"426b434","isDirty":false}
 7 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.10.5' }
 8 verbose rootPath C:\projects\lerna_test
-9 info current version 0.0.6
+9 info current version 0.0.7
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly currentBranch
 13 verbose currentBranch master
 14 silly remoteBranchExists
 15 silly isBehindUpstream
-16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.6-1-g44a4824" => {"lastTagName":"v0.0.6","lastVersion":"v0.0.6","refCount":"1","sha":"44a4824","isDirty":false}
-20 info Looking for changed packages since v0.0.6
-21 silly diffSinceIn v0.0.6 packages/AdditionModal
+19 silly git-describe.sync "v0.0.7-1-g426b434" => {"lastTagName":"v0.0.7","lastVersion":"v0.0.7","refCount":"1","sha":"426b434","isDirty":false}
+20 info Looking for changed packages since v0.0.7
+21 silly diffSinceIn v0.0.7 packages/AdditionModal
 22 silly diff packages/AdditionModal/package.json
-23 silly diffSinceIn v0.0.6 packages/CalcModule
+23 silly diffSinceIn v0.0.7 packages/CalcModule
 24 silly diff packages/CalcModule/package.json
-25 silly diffSinceIn v0.0.6 packages/SubtractionModule
+25 silly diffSinceIn v0.0.7 packages/SubtractionModule
 26 silly diff packages/SubtractionModule/package.json
 27 verbose updated AdditionModal
 28 verbose updated CalcModule
 29 verbose updated SubtractionModule
-30 verbose git-describe undefined => "v0.0.6-1-g44a4824"
-31 silly git-describe parsed => {"lastTagName":"v0.0.6","lastVersion":"v0.0.6","refCount":"1","sha":"44a4824","isDirty":false}
+30 verbose git-describe undefined => "v0.0.7-1-g426b434"
+31 silly git-describe parsed => {"lastTagName":"v0.0.7","lastVersion":"v0.0.7","refCount":"1","sha":"426b434","isDirty":false}
 32 silly batched [ PackageGraphNode {
 32 silly batched     name: 'AdditionModal',
 32 silly batched     externalDependencies: Map {},
@@ -60,10 +60,10 @@
 42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\AdditionModal\\package.json',
 42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\CalcModule\\package.json',
 42 silly gitAdd   'C:\\projects\\lerna_test\\lerna.json' ]
-43 silly gitCommit v0.0.7
-44 verbose git [ 'commit', '-m', 'v0.0.7' ]
-45 silly gitTag v0.0.7
-46 verbose git [ 'tag', 'v0.0.7', '-m', 'v0.0.7' ]
+43 silly gitCommit v0.0.8
+44 verbose git [ 'commit', '-m', 'v0.0.8' ]
+45 silly gitTag v0.0.8
+46 verbose git [ 'tag', 'v0.0.8', '-m', 'v0.0.8' ]
 47 silly lifecycle No script for "postversion" in "AdditionModal", continuing
 48 silly lifecycle No script for "postversion" in "CalcModule", continuing
 49 silly lifecycle No script for "postversion" in "SubtractionModule", continuing
@@ -90,7 +90,7 @@
 57 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
 58 warn ENOLICENSE Packages AdditionModal, CalcModule, SubtractionModule are missing a license
 59 silly getCurrentSHA
-60 verbose getCurrentSHA 60db9680a1fee6652886f215bcebdca20c006d6d
+60 verbose getCurrentSHA 9f63d664d4379c80fb48d4f2c39fe2b3160f9613
 61 silly lifecycle No script for "prepublish" in "root", continuing
 62 silly lifecycle No script for "prepare" in "root", continuing
 63 silly lifecycle No script for "prepublishOnly" in "root", continuing
@@ -119,7 +119,7 @@
 86 silly lifecycle No script for "postpack" in "root", continuing
 87 verbose publish AdditionModal
 88 verbose publish SubtractionModule
-89 http fetch PUT 401 http://registry.npm.taobao.org/AdditionModal 671ms
-90 error Error: 401 Unauthorized - PUT http://registry.npm.taobao.org/AdditionModal - unauthorized
+89 http fetch PUT 401 http://registry.npm.taobao.org/SubtractionModule 680ms
+90 error Error: 401 Unauthorized - PUT http://registry.npm.taobao.org/SubtractionModule - unauthorized
 90 error     at res.buffer.catch.then.body (C:\Users\d.hanin\AppData\Roaming\nvm\v9.11.2\node_modules\lerna\node_modules\npm-registry-fetch\check-response.js:104:15)
 90 error     at <anonymous>
