@@ -1,6 +1,6 @@
 {
   "name": "CalcModule",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "AdditionModal": "^0.0.9",
-    "SubtractionModule": "^0.0.9"
+    "AdditionModal": "^0.0.10",
+    "SubtractionModule": "^0.0.10"
   },
   "gitHead": "42ee8fb50eba1417d5c75401d7d29a9b4f0e5cd4"
 }
