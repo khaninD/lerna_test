@@ -1,10 +1,128 @@
-52 error Error: Command failed: git push --follow-tags --no-verify origin master
-52 error fatal: HttpRequestException encountered.
-52 error    �ந��諠 �訡�� �� ��ࠢ�� �����.
-52 error bash: /dev/tty: No such device or address
-52 error error: failed to execute prompt script (exit code 1)
-52 error fatal: could not read Username for 'https://github.com': No error
-52 error
-52 error     at makeError (C:\projects\lerna_test\node_modules\execa\index.js:174:9)
-52 error     at Promise.all.then.arr (C:\projects\lerna_test\node_modules\execa\index.js:278:16)
-52 error     at <anonymous>
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.10.5',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js' }
+1 notice cli v3.10.5
+2 verbose rootPath C:\projects\lerna_test
+3 verbose session 450947dfae88713f
+4 verbose user-agent lerna/3.10.5/node@v9.11.2+x64 (win32)
+5 verbose git-describe undefined => "v0.0.2-4-ga6de0f7"
+6 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"4","sha":"a6de0f7","isDirty":false}
+7 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.10.5' }
+8 verbose rootPath C:\projects\lerna_test
+9 info current version 0.0.4
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly currentBranch
+13 verbose currentBranch master
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v0.0.2-4-ga6de0f7" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"4","sha":"a6de0f7","isDirty":false}
+20 info Looking for changed packages since v0.0.2
+21 silly diffSinceIn v0.0.2 packages/AdditionModal
+22 silly diff packages/AdditionModal/index.js
+22 silly diff packages/AdditionModal/package.json
+23 silly diffSinceIn v0.0.2 packages/CalcModule
+24 silly diff packages/CalcModule/node_modules/AdditionModal
+24 silly diff packages/CalcModule/node_modules/SubtractionModule
+24 silly diff packages/CalcModule/package.json
+25 silly diffSinceIn v0.0.2 packages/SubtractionModule
+26 silly diff packages/SubtractionModule/package.json
+27 verbose updated AdditionModal
+28 verbose updated CalcModule
+29 verbose updated SubtractionModule
+30 verbose git-describe undefined => "v0.0.2-4-ga6de0f7"
+31 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"4","sha":"a6de0f7","isDirty":false}
+32 silly batched [ PackageGraphNode {
+32 silly batched     name: 'AdditionModal',
+32 silly batched     externalDependencies: Map {},
+32 silly batched     localDependencies: Map {},
+32 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } },
+32 silly batched   PackageGraphNode {
+32 silly batched     name: 'SubtractionModule',
+32 silly batched     externalDependencies: Map {},
+32 silly batched     localDependencies: Map {},
+32 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } } ]
+33 silly batched [ PackageGraphNode {
+33 silly batched     name: 'CalcModule',
+33 silly batched     externalDependencies: Map {},
+33 silly batched     localDependencies: Map {},
+33 silly batched     localDependents: Map {} } ]
+34 silly lifecycle No script for "preversion" in "root", continuing
+35 silly lifecycle No script for "preversion" in "AdditionModal", continuing
+36 silly lifecycle No script for "preversion" in "SubtractionModule", continuing
+37 silly lifecycle No script for "version" in "SubtractionModule", continuing
+38 silly lifecycle No script for "version" in "AdditionModal", continuing
+39 silly lifecycle No script for "preversion" in "CalcModule", continuing
+40 silly lifecycle No script for "version" in "CalcModule", continuing
+41 silly lifecycle No script for "version" in "root", continuing
+42 silly gitAdd [ 'C:\\projects\\lerna_test\\packages\\SubtractionModule\\package.json',
+42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\AdditionModal\\package.json',
+42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\CalcModule\\package.json',
+42 silly gitAdd   'C:\\projects\\lerna_test\\lerna.json' ]
+43 silly gitCommit v0.0.5
+44 verbose git [ 'commit', '-m', 'v0.0.5' ]
+45 silly gitTag v0.0.5
+46 verbose git [ 'tag', 'v0.0.5', '-m', 'v0.0.5' ]
+47 silly lifecycle No script for "postversion" in "AdditionModal", continuing
+48 silly lifecycle No script for "postversion" in "CalcModule", continuing
+49 silly lifecycle No script for "postversion" in "SubtractionModule", continuing
+50 silly lifecycle No script for "postversion" in "root", continuing
+51 info git Pushing tags...
+52 silly gitPush origin master
+53 silly batched [ PackageGraphNode {
+53 silly batched     name: 'AdditionModal',
+53 silly batched     externalDependencies: Map {},
+53 silly batched     localDependencies: Map {},
+53 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } },
+53 silly batched   PackageGraphNode {
+53 silly batched     name: 'SubtractionModule',
+53 silly batched     externalDependencies: Map {},
+53 silly batched     localDependencies: Map {},
+53 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } } ]
+54 silly batched [ PackageGraphNode {
+54 silly batched     name: 'CalcModule',
+54 silly batched     externalDependencies: Map {},
+54 silly batched     localDependencies: Map {},
+54 silly batched     localDependents: Map {} } ]
+55 info publish Publishing packages to npm...
+56 notice Skipping all user and access validation due to third-party registry
+57 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+58 warn ENOLICENSE Packages AdditionModal, CalcModule, SubtractionModule are missing a license
+59 silly getCurrentSHA
+60 verbose getCurrentSHA 6a82e50b704db068f85ccff7dae061ecef84334f
+61 silly lifecycle No script for "prepublish" in "root", continuing
+62 silly lifecycle No script for "prepare" in "root", continuing
+63 silly lifecycle No script for "prepublishOnly" in "root", continuing
+64 silly lifecycle No script for "prepack" in "root", continuing
+65 verbose pack-directory packages\AdditionModal
+66 verbose pack-directory packages\SubtractionModule
+67 silly lifecycle No script for "prepublish" in "AdditionModal", continuing
+68 silly lifecycle No script for "prepublish" in "SubtractionModule", continuing
+69 silly lifecycle No script for "prepare" in "AdditionModal", continuing
+70 silly lifecycle No script for "prepare" in "SubtractionModule", continuing
+71 silly lifecycle No script for "prepublishOnly" in "AdditionModal", continuing
+72 silly lifecycle No script for "prepublishOnly" in "SubtractionModule", continuing
+73 silly lifecycle No script for "prepack" in "AdditionModal", continuing
+74 silly lifecycle No script for "prepack" in "SubtractionModule", continuing
+75 silly lifecycle No script for "postpack" in "AdditionModal", continuing
+76 verbose packed AdditionModal packages\AdditionModal
+77 silly lifecycle No script for "postpack" in "SubtractionModule", continuing
+78 verbose packed SubtractionModule packages\SubtractionModule
+79 verbose pack-directory packages\CalcModule
+80 silly lifecycle No script for "prepublish" in "CalcModule", continuing
+81 silly lifecycle No script for "prepare" in "CalcModule", continuing
+82 silly lifecycle No script for "prepublishOnly" in "CalcModule", continuing
+83 silly lifecycle No script for "prepack" in "CalcModule", continuing
+84 silly lifecycle No script for "postpack" in "CalcModule", continuing
+85 verbose packed CalcModule packages\CalcModule
+86 silly lifecycle No script for "postpack" in "root", continuing
+87 verbose publish AdditionModal
+88 verbose publish SubtractionModule
+89 http fetch PUT 401 http://registry.npm.taobao.org/AdditionModal 1192ms
+90 error Error: 401 Unauthorized - PUT http://registry.npm.taobao.org/AdditionModal - unauthorized
+90 error     at res.buffer.catch.then.body (C:\Users\d.hanin\AppData\Roaming\nvm\v9.11.2\node_modules\lerna\node_modules\npm-registry-fetch\check-response.js:104:15)
+90 error     at <anonymous>
