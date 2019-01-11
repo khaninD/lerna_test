@@ -1,22 +1,16 @@
 0 silly argv { _: [ 'publish' ],
-0 silly argv   'verify-access': false,
-0 silly argv   verifyAccess: false,
 0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '3.10.5',
 0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js' }
 1 notice cli v3.10.5
 2 verbose rootPath C:\projects\lerna_test
-3 verbose session 75c51df70ce76e49
+3 verbose session 47d34e61a34b7081
 4 verbose user-agent lerna/3.10.5/node@v9.11.2+x64 (win32)
-5 verbose git-describe undefined => "v0.0.9-1-gc43b615"
-6 silly git-describe parsed => {"lastTagName":"v0.0.9","lastVersion":"v0.0.9","refCount":"1","sha":"c43b615","isDirty":false}
-7 silly argv { _: [ 'publish' ],
-7 silly argv   'verify-access': false,
-7 silly argv   verifyAccess: false,
-7 silly argv   composed: 'publish',
-7 silly argv   lernaVersion: '3.10.5' }
+5 verbose git-describe undefined => "v0.0.10-1-ge0d1d8d"
+6 silly git-describe parsed => {"lastTagName":"v0.0.10","lastVersion":"v0.0.10","refCount":"1","sha":"e0d1d8d","isDirty":false}
+7 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.10.5' }
 8 verbose rootPath C:\projects\lerna_test
-9 info current version 0.0.9
+9 info current version 0.0.10
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly currentBranch
@@ -26,106 +20,106 @@
 16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.9-1-gc43b615" => {"lastTagName":"v0.0.9","lastVersion":"v0.0.9","refCount":"1","sha":"c43b615","isDirty":false}
-20 info Looking for changed packages since v0.0.9
-21 silly diffSinceIn v0.0.9 packages/AdditionModal
+19 silly git-describe.sync "v0.0.10-1-ge0d1d8d" => {"lastTagName":"v0.0.10","lastVersion":"v0.0.10","refCount":"1","sha":"e0d1d8d","isDirty":false}
+20 info Looking for changed packages since v0.0.10
+21 silly diffSinceIn v0.0.10 packages/AdditionModal
 22 silly diff packages/AdditionModal/package.json
-23 silly diffSinceIn v0.0.9 packages/CalcModule
+23 silly diffSinceIn v0.0.10 packages/CalcModule
 24 silly diff packages/CalcModule/package.json
-25 silly diffSinceIn v0.0.9 packages/SubtractionModule
+25 silly diffSinceIn v0.0.10 packages/SubtractionModule
 26 silly diff packages/SubtractionModule/package.json
-27 verbose updated AdditionModal
-28 verbose updated CalcModule
-29 verbose updated SubtractionModule
-30 verbose git-describe undefined => "v0.0.9-1-gc43b615"
-31 silly git-describe parsed => {"lastTagName":"v0.0.9","lastVersion":"v0.0.9","refCount":"1","sha":"c43b615","isDirty":false}
+27 verbose updated additionModal
+28 verbose updated calcModule
+29 verbose updated subtractionModule
+30 verbose git-describe undefined => "v0.0.10-1-ge0d1d8d"
+31 silly git-describe parsed => {"lastTagName":"v0.0.10","lastVersion":"v0.0.10","refCount":"1","sha":"e0d1d8d","isDirty":false}
 32 silly batched [ PackageGraphNode {
-32 silly batched     name: 'AdditionModal',
+32 silly batched     name: 'additionModal',
 32 silly batched     externalDependencies: Map {},
 32 silly batched     localDependencies: Map {},
-32 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } },
+32 silly batched     localDependents: Map { 'calcModule' => [PackageGraphNode] } },
 32 silly batched   PackageGraphNode {
-32 silly batched     name: 'SubtractionModule',
+32 silly batched     name: 'subtractionModule',
 32 silly batched     externalDependencies: Map {},
 32 silly batched     localDependencies: Map {},
-32 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } } ]
+32 silly batched     localDependents: Map {} } ]
 33 silly batched [ PackageGraphNode {
-33 silly batched     name: 'CalcModule',
-33 silly batched     externalDependencies: Map {},
+33 silly batched     name: 'calcModule',
+33 silly batched     externalDependencies: Map { 'aubtractionModule' => [Object] },
 33 silly batched     localDependencies: Map {},
 33 silly batched     localDependents: Map {} } ]
 34 silly lifecycle No script for "preversion" in "root", continuing
-35 silly lifecycle No script for "preversion" in "AdditionModal", continuing
-36 silly lifecycle No script for "preversion" in "SubtractionModule", continuing
-37 silly lifecycle No script for "version" in "AdditionModal", continuing
-38 silly lifecycle No script for "version" in "SubtractionModule", continuing
-39 silly lifecycle No script for "preversion" in "CalcModule", continuing
-40 silly lifecycle No script for "version" in "CalcModule", continuing
+35 silly lifecycle No script for "preversion" in "additionModal", continuing
+36 silly lifecycle No script for "preversion" in "subtractionModule", continuing
+37 silly lifecycle No script for "version" in "additionModal", continuing
+38 silly lifecycle No script for "version" in "subtractionModule", continuing
+39 silly lifecycle No script for "preversion" in "calcModule", continuing
+40 silly lifecycle No script for "version" in "calcModule", continuing
 41 silly lifecycle No script for "version" in "root", continuing
 42 silly gitAdd [ 'C:\\projects\\lerna_test\\packages\\AdditionModal\\package.json',
 42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\SubtractionModule\\package.json',
 42 silly gitAdd   'C:\\projects\\lerna_test\\packages\\CalcModule\\package.json',
 42 silly gitAdd   'C:\\projects\\lerna_test\\lerna.json' ]
-43 silly gitCommit v0.0.10
-44 verbose git [ 'commit', '-m', 'v0.0.10' ]
-45 silly gitTag v0.0.10
-46 verbose git [ 'tag', 'v0.0.10', '-m', 'v0.0.10' ]
-47 silly lifecycle No script for "postversion" in "AdditionModal", continuing
-48 silly lifecycle No script for "postversion" in "CalcModule", continuing
-49 silly lifecycle No script for "postversion" in "SubtractionModule", continuing
+43 silly gitCommit v0.0.11
+44 verbose git [ 'commit', '-m', 'v0.0.11' ]
+45 silly gitTag v0.0.11
+46 verbose git [ 'tag', 'v0.0.11', '-m', 'v0.0.11' ]
+47 silly lifecycle No script for "postversion" in "additionModal", continuing
+48 silly lifecycle No script for "postversion" in "calcModule", continuing
+49 silly lifecycle No script for "postversion" in "subtractionModule", continuing
 50 silly lifecycle No script for "postversion" in "root", continuing
 51 info git Pushing tags...
 52 silly gitPush origin master
 53 silly batched [ PackageGraphNode {
-53 silly batched     name: 'AdditionModal',
+53 silly batched     name: 'additionModal',
 53 silly batched     externalDependencies: Map {},
 53 silly batched     localDependencies: Map {},
-53 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } },
+53 silly batched     localDependents: Map { 'calcModule' => [PackageGraphNode] } },
 53 silly batched   PackageGraphNode {
-53 silly batched     name: 'SubtractionModule',
+53 silly batched     name: 'subtractionModule',
 53 silly batched     externalDependencies: Map {},
 53 silly batched     localDependencies: Map {},
-53 silly batched     localDependents: Map { 'CalcModule' => [PackageGraphNode] } } ]
+53 silly batched     localDependents: Map {} } ]
 54 silly batched [ PackageGraphNode {
-54 silly batched     name: 'CalcModule',
-54 silly batched     externalDependencies: Map {},
+54 silly batched     name: 'calcModule',
+54 silly batched     externalDependencies: Map { 'aubtractionModule' => [Object] },
 54 silly batched     localDependencies: Map {},
 54 silly batched     localDependents: Map {} } ]
 55 info publish Publishing packages to npm...
 56 notice Skipping all user and access validation due to third-party registry
 57 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
-58 warn ENOLICENSE Packages AdditionModal, CalcModule, SubtractionModule are missing a license
+58 warn ENOLICENSE Packages additionModal, calcModule, subtractionModule are missing a license
 59 silly getCurrentSHA
-60 verbose getCurrentSHA f9800faee3336dca6173d8518dca8a8e30ffe2d9
+60 verbose getCurrentSHA 930845c9f1e064c24547cbcb18ca51b1ebac99fb
 61 silly lifecycle No script for "prepublish" in "root", continuing
 62 silly lifecycle No script for "prepare" in "root", continuing
 63 silly lifecycle No script for "prepublishOnly" in "root", continuing
 64 silly lifecycle No script for "prepack" in "root", continuing
 65 verbose pack-directory packages\AdditionModal
 66 verbose pack-directory packages\SubtractionModule
-67 silly lifecycle No script for "prepublish" in "AdditionModal", continuing
-68 silly lifecycle No script for "prepublish" in "SubtractionModule", continuing
-69 silly lifecycle No script for "prepare" in "AdditionModal", continuing
-70 silly lifecycle No script for "prepare" in "SubtractionModule", continuing
-71 silly lifecycle No script for "prepublishOnly" in "AdditionModal", continuing
-72 silly lifecycle No script for "prepublishOnly" in "SubtractionModule", continuing
-73 silly lifecycle No script for "prepack" in "AdditionModal", continuing
-74 silly lifecycle No script for "prepack" in "SubtractionModule", continuing
-75 silly lifecycle No script for "postpack" in "AdditionModal", continuing
-76 verbose packed AdditionModal packages\AdditionModal
-77 silly lifecycle No script for "postpack" in "SubtractionModule", continuing
-78 verbose packed SubtractionModule packages\SubtractionModule
+67 silly lifecycle No script for "prepublish" in "additionModal", continuing
+68 silly lifecycle No script for "prepublish" in "subtractionModule", continuing
+69 silly lifecycle No script for "prepare" in "additionModal", continuing
+70 silly lifecycle No script for "prepare" in "subtractionModule", continuing
+71 silly lifecycle No script for "prepublishOnly" in "additionModal", continuing
+72 silly lifecycle No script for "prepublishOnly" in "subtractionModule", continuing
+73 silly lifecycle No script for "prepack" in "additionModal", continuing
+74 silly lifecycle No script for "prepack" in "subtractionModule", continuing
+75 silly lifecycle No script for "postpack" in "subtractionModule", continuing
+76 verbose packed subtractionModule packages\SubtractionModule
+77 silly lifecycle No script for "postpack" in "additionModal", continuing
+78 verbose packed additionModal packages\AdditionModal
 79 verbose pack-directory packages\CalcModule
-80 silly lifecycle No script for "prepublish" in "CalcModule", continuing
-81 silly lifecycle No script for "prepare" in "CalcModule", continuing
-82 silly lifecycle No script for "prepublishOnly" in "CalcModule", continuing
-83 silly lifecycle No script for "prepack" in "CalcModule", continuing
-84 silly lifecycle No script for "postpack" in "CalcModule", continuing
-85 verbose packed CalcModule packages\CalcModule
+80 silly lifecycle No script for "prepublish" in "calcModule", continuing
+81 silly lifecycle No script for "prepare" in "calcModule", continuing
+82 silly lifecycle No script for "prepublishOnly" in "calcModule", continuing
+83 silly lifecycle No script for "prepack" in "calcModule", continuing
+84 silly lifecycle No script for "postpack" in "calcModule", continuing
+85 verbose packed calcModule packages\CalcModule
 86 silly lifecycle No script for "postpack" in "root", continuing
-87 verbose publish AdditionModal
-88 verbose publish SubtractionModule
-89 http fetch PUT 401 http://registry.npm.taobao.org/AdditionModal 763ms
-90 error Error: 401 Unauthorized - PUT http://registry.npm.taobao.org/AdditionModal - unauthorized
+87 verbose publish additionModal
+88 verbose publish subtractionModule
+89 http fetch PUT 401 http://registry.npm.taobao.org/additionModal 730ms
+90 error Error: 401 Unauthorized - PUT http://registry.npm.taobao.org/additionModal - unauthorized
 90 error     at res.buffer.catch.then.body (C:\Users\d.hanin\AppData\Roaming\nvm\v9.11.2\node_modules\lerna\node_modules\npm-registry-fetch\check-response.js:104:15)
 90 error     at <anonymous>
