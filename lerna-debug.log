@@ -1,0 +1,10 @@
+52 error Error: Command failed: git push --follow-tags --no-verify origin master
+52 error fatal: HttpRequestException encountered.
+52 error    �ந��諠 �訡�� �� ��ࠢ�� �����.
+52 error bash: /dev/tty: No such device or address
+52 error error: failed to execute prompt script (exit code 1)
+52 error fatal: could not read Username for 'https://github.com': No error
+52 error
+52 error     at makeError (C:\projects\lerna_test\node_modules\execa\index.js:174:9)
+52 error     at Promise.all.then.arr (C:\projects\lerna_test\node_modules\execa\index.js:278:16)
+52 error     at <anonymous>
