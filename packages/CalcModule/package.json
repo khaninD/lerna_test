@@ -1,5 +1,5 @@
 {
-  "name": "calcModule",
+  "name": "calc_module_123",
   "version": "0.0.12",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "additionModal": "^0.0.11",
-    "aubtractionModule": "^0.0.10"
+    "addition_123": "^0.0.11",
+    "subtraction_module_123": "^0.0.10"
   },
-  "gitHead": "930845c9f1e064c24547cbcb18ca51b1ebac99fb"
+  "gitHead": "eb31ef80345ac4163e147938405c1123a66d9e81"
 }
