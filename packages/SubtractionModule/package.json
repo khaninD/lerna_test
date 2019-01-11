@@ -1,5 +1,5 @@
 {
-  "name": "SubtractionModule",
+  "name": "subtractionModule",
   "version": "0.0.10",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "42ee8fb50eba1417d5c75401d7d29a9b4f0e5cd4"
+  "gitHead": "f9800faee3336dca6173d8518dca8a8e30ffe2d9"
 }
